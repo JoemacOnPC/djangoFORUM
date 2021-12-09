@@ -1,0 +1,9 @@
+{% extends "forum/base.html" %}
+{% load crispy_forms_tags %}
+
+<!--Block-->
+{% block content %}
+    <h1>{{ user.username }}</h1>
+    <!-- <img class="rounded-circle account-img" src="{ user.profile.image.url }}"> -->
+    <p><{{ user.email }}/p>
+{% endblock content %}

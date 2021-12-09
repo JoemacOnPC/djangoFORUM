@@ -1,0 +1,12 @@
+{% extends "forum/base.html" %}
+{% load crispy_forms_tags %}
+
+<!--Block-->
+{% block content %}
+    <h1>Successfully logged-out.</h1>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            <a class="ml-2" href="{% url 'login' %}">Login</a>
+        </small>
+    </div>
+{% endblock content %}

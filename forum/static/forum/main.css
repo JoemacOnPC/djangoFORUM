@@ -1,0 +1,41 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #000000;
+}
+
+body {
+  background: #2c2c2c;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.article-title {
+  color: #000000;
+}
+
+a.article-title:hover {
+  color: #ca4242;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #ca4242
+}

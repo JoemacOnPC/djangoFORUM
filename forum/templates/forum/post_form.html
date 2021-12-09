@@ -1,0 +1,21 @@
+{% extends "forum/base.html" %}
+{% load crispy_forms_tags %}
+
+<!--Block-->
+{% block content %}
+    <div class="content-section">
+        <form method="POST">
+            <!-- django's security token -->
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Create Post</legend>
+                <!-- .as_p is to render the form with <p>, updated to use crispy forms -->
+                <!-- { form.as_p }} -->
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
